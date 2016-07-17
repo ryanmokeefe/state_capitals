@@ -11,10 +11,10 @@ We're going to create a game to help us memorize the names of the capitals of al
 
 - Make sure the states don't appear in alphabetical order in the prompts. This will make the game a bit more challenging for the user.
 
-- Provide a welcome message to introduce the play to the game.
+- Provide a welcome message to introduce the player to the game.
 
 - Initialize new keys in the hashes that store the number of times a user gets a capital correct and the number of times the answer is wrong.
 
-- Through all 50 states, prompt the user to name the capital of the state. If the answer is correct, display a message saying so increment the `correct` key. If the answer is wrong, display a message saying so increment the `wrong` key. After each prompt, display a message telling the reader how many times the state was answered correctly out of the total number of times answered.
+- Through all 50 states, prompt the user to name the capital of the state. If the answer is correct, display a message saying so increment the `correct` key. If the answer is wrong, display a message saying so and increment the `wrong` key. After each prompt, display a message telling the reader how many times the state was answered correctly out of the total number of times answered.
 
 - Once the user has gone through all 50 states, ask them if they'd like to play again. If they choose to do so, set the order of how the prompts appear to start with the ones they got wrong the most often.
