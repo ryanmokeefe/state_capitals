@@ -18,3 +18,8 @@ We're going to create a game to help us memorize the names of the capitals of al
 - Through all 50 states, prompt the user to name the capital of the state. If the answer is correct, display a message saying so increment the `correct` key. If the answer is wrong, display a message saying so and increment the `wrong` key. After each prompt, display a message telling the reader how many times the state was answered correctly out of the total number of times answered.
 
 - Once the user has gone through all 50 states, ask them if they'd like to play again. If they choose to do so, set the order of how the prompts appear to start with the ones they got wrong the most often.
+
+## BONUS!
+
+- Group states that have two or more incorrect guesses.
+- Add a hint functionality that prints the first 3 letters of a capital
