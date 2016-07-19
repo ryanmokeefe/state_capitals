@@ -3,7 +3,7 @@
 We're going to create a game to help us memorize the names of the capitals of all 50 states. Your program should prompt the user to identify the capital associated with a given state. There should be running tallies on the number of correct and incorrect answers. After getting through all 50 states one time, users should be asked whether or not they want to play again. As they continue, the prompts on states should appear in the order of the ones the user got wrong the most to least. You're given an array of hashes that contain each state name and capital. *(Hint: For the purposes of developing this program, start with a test array of three hashes so you don't have to play through all 50 states each time.)*
 
 ## Methods to Research
-- `.each_with_index`
+- `.each`
 - `.sort_by`
 - `.shuffle`
 
