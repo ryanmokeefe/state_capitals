@@ -42,4 +42,3 @@ To play the game:
 - Calculate a overall total score, display a running tally for each prompt
 - If the user plays again, set the order of how the prompts appear to start with the ones they got wrong the most often.
 - Add a hint functionality that prints the first 3 letters of a capital
-- Group states that have two or more incorrect guesses.
