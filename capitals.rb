@@ -150,4 +150,62 @@ states =[
 }, {
     name: "Wyoming",
     capital: "Cheyenne"
-}]
+}
+]
+
+# Score:
+correct = 0
+incorrect = 0
+
+# Hash Keys for correct/incorrect:
+states.each {|state|     
+    state[:correct] = 0
+    state[:incorrect] = 0
+}
+
+
+# Welcome Prompt:
+puts "Welcome to State Capitals! Name the correct capital for each state, or type 'skip' to move on."
+
+# Shuffle:
+states_game = states.shuffle
+
+# Game loop + prompt
+prompt = ""
+
+
+loop do
+    # break if prompt == "quit"
+    states_game.each { |state| 
+        while prompt != state[:capital] do 
+            puts "What is the capital of #{state[:name]}?"
+            prompt = gets.chomp
+            if prompt == state[:capital]
+                correct += 1
+                state[:correct] += 1
+                puts "That is correct! You answered this question correctly #{state[:correct]} time(s) out of #{state[:correct] + state[:incorrect]} time(s)."
+            end
+        break if prompt == "skip" 
+            if prompt != state[:capital]
+                incorrect += 1
+                state[:incorrect] += 1
+                puts "Try again."
+            end
+        end
+        
+    }
+    puts "Correct: #{correct}"
+    puts "Incorrect: #{incorrect}"
+    puts "Would you like to play again? (Y/N)"
+    prompt = gets.chomp
+    break if prompt == "N" || prompt == "No" || prompt == "no" || prompt == "n" 
+end
+
+
+
+
+
+# puts "Correct: #{correct}"
+# puts "Incorrect: #{incorrect}"
+# puts states_game
+
