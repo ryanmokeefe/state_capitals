@@ -175,7 +175,6 @@ prompt = ""
 
 
 loop do
-    # break if prompt == "quit"
     states_game.each { |state| 
         while prompt != state[:capital] do 
             puts "What is the capital of #{state[:name]}?"
@@ -192,8 +191,9 @@ loop do
                 puts "Try again."
             end
         end
-        
     }
+    # break if prompt == "quit"
+
     puts "Correct: #{correct}"
     puts "Incorrect: #{incorrect}"
     puts "Would you like to play again? (Y/N)"
